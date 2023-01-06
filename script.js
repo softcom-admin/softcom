@@ -17,7 +17,7 @@ document.onreadystatechange = function() {
 };
 
 async function getData() {
-    const url = "https://softcom-restapi.herokuapp.com/announcements"
+    const url = "https://https://softcom-api-h7ra.onrender.com/announcements"
     // const url = "http://localhost:5000/announcements"
     const data = await fetch(url)
     let response = await data.json()
@@ -47,7 +47,7 @@ getData().then((res)=>{
 
 async function getComic(){
     // const url = "http://localhost:5000/comic"
-    const url = "https://softcom-restapi.herokuapp.com/comic"
+    const url = "https://https://softcom-api-h7ra.onrender.com/comic"
     const response = await fetch(url)
     const img_url = await response.json()
 
